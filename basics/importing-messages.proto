@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+import "basics/to-be-imported-message.proto"
+
+package importing;
+
+message Person {
+    int32 age = 1;
+    string firstName = 2;
+    string lastName = 3;
+    bytes smallPictures = 4;
+    bool isProfileVerified = 5;
+    float height = 6;
+
+    repeated string phoneNumbers = 7;
+
+    Date date = 8;
+}

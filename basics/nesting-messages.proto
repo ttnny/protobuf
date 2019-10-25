@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+message Person {
+    int32 age = 1;
+    string firstName = 2;
+    string lastName = 3;
+    bytes smallPictures = 4;
+    bool isProfileVerified = 5;
+    float height = 6;
+
+    repeated string phoneNumbers = 7;
+
+    Date date = 8;
+
+    // Nested message
+    message Address {
+        string houseNumber = 1;
+        string street = 2;
+        string city = 3;
+        string state = 4;
+        int32 zipCode = 5;
+    }
+
+    repated Address addresses = 9;
+}
+
+message Date {
+    int32 year = 1;
+    int32 month = 2;
+    int32 day = 3;
+}
