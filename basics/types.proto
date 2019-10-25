@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+// A message is a data structure
+message Person {
+    // type fieldName = tag
+    // Google reserves tags from 19000 to 19999 for special use
+    int32 age = 1;
+    string firstName = 2;
+    string lastName = 3;
+    bytes smallPictures = 4;
+    bool isProfileVerified = 5;
+    float height = 6;
+
+    // To create a list of phoneNumbers type string
+    repeated string phoneNumbers = 7;
+}
+
+// Enums
+enum RGBColor {
+    UNKNOWN_COLOR = 0;
+    RED = 1;
+    GREEN = 2;
+    BLUE = 3;
+}
+
+RGBColor rgb = 8;
