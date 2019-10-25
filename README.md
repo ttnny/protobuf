@@ -2,4 +2,5 @@
 Protocol Buffers for gRPC
 
 # about
-This repo contains my practices in learning protobuf.
+This is a submodule of the learning repo.
+This contains protobuf practices.
