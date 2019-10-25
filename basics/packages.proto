@@ -1,5 +1,7 @@
 syntax = "proto3";
 
+import "basics/to-be-imported-message.proto";
+
 message Person {
-    Date date = 1;
+    importing.Date date = 1;
 }
