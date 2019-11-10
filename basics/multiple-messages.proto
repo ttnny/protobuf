@@ -10,7 +10,7 @@ message Person {
 
     repeated string phoneNumbers = 7;
 
-    Date date = 8;
+    Date birthday = 8;
 }
 
 message Date {

@@ -1,7 +1,11 @@
 syntax = "proto3";
 
+// Need to use entire path including root dir
 import "basics/to-be-imported-message.proto";
 
 message Person {
-    importing.Date date = 1;
+    int32 age = 1;
+    string fullName = 2;
+
+    datetime.Date date = 3;
 }
